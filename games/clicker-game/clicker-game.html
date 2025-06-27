@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clicker Game</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #counter {
+      font-size: 48px;
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #00cc66;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00994d;
+    }
+  </style>
+</head>
+<body>
+  <h1>Clicker Game</h1>
+  <p>Click the button to increase your score!</p>
+  <div id="counter">0</div>
+  <button onclick="increment()">Click Me!</button>
+
+  <script>
+    let count = 0;
+    function increment() {
+      count++;
+      document.getElementById('counter').textContent = count;
+    }
+  </script>
+</body>
+</html>
